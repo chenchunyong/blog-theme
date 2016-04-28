@@ -20,12 +20,12 @@ $ npm install hexo-cli -g
 $ git clone  https://github.com/chenchunyong/blog-theme.git
 $ cd blog-theme
 ```
-### 2. Install dependencies
+### 3. Install dependencies
 
 ```
 $ npm install
 ```
-### 3. Install module `hexo-theme-next` theme
+### 4. Install module `hexo-theme-next` theme
 
 ```
 $ git submodule init
@@ -33,7 +33,7 @@ $ git submodule update
 $ cd themes/next && npm install
 ```
 
-### 4. Blog start 
+### 5. Blog start 
 ```
 $ hexo server
 ```
