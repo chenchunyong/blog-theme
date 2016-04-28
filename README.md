@@ -1,7 +1,7 @@
 # blog-theme
   blog-theme builds on `hexo`
   
-  demo: [http://chenchunyong.github.io](http://chenchunyong.github.io])
+  demo: [http://chenchunyong.github.io](http://chenchunyong.github.io)
   
 ## Requirements
 
@@ -35,6 +35,7 @@ $ cd themes/next && npm install
 
 ### 5. Blog start 
 ```
+$ cd blog-theme
 $ hexo server
 ```
 
