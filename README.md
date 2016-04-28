@@ -1,7 +1,7 @@
 # blog-theme
   blog-theme builds on `hexo`
   
-  demo: chenchunyong.github.io
+  demo: [http://chenchunyong.github.io](http://chenchunyong.github.io])
   
 ## Requirements
 
