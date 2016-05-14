@@ -27,8 +27,8 @@ categories: vim
 
  #### 3. 安装powerline字体
  	```
- 	$ git clone https://github.com/powerline/powerline
- 	    && cd powerline
+ 	$ git clone https://github.com/powerline/fonts.git
+ 	    && cd fonts
  	$ ./install.sh
  	```
  #### 4. 安装solarized字体
@@ -45,7 +45,9 @@ categories: vim
  2. 在iterm2 Profile设置中，Color 选择导入`Solarized Dark`。
  	 ![](/images/vim/iterm2color设置.png)
 
-
+#### 6. iterm2其他主题
+参考:[iterm2](http://github.com/mbadolato/iTerm2-Color-Schemes)
+ 
  ## 结束
 
  通过上述简单的配置,即可搭建一个漂亮的界面了。
