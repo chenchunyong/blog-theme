@@ -114,6 +114,10 @@ $ git checkout feature
 删除本地分支，如果分支有commit，则需要用`-D`来强制删除。
 #### 9. git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 \<(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
 批量删除那些远程已经删除，而没有尚未删除的分支。
+#### 10. git branch -m oldFeature newFeature
+重命名分支名称。oldFeature不填则默认为当前分支。
+
+
 ## git pull
 拉取远程代码，并合并当前分支的代码。
 #### 1. git pull
@@ -218,6 +222,14 @@ $ git push origin 本地分支:远程分支
 用图形化显示分支合并历史。
 #### 5. git log \-\-pretty=format:"%h - %an, %ar : %s"
 自定义分支显示格式。
+#### 6. git log origin/feature
+本地仓库feature分支log。
+#### 7. git log file
+HEAD指针中某个文件commit历史。
+#### 8. git log ..origin/feature
+查看当前还有多少个commit还未合并到当前分支。
+#### 9. git log origin/feature..
+查看没有在远端分支上的HEAD的改动。
 
 选项         说明
 %H      提交对象（commit）的完整哈希字串
