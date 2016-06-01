@@ -19,8 +19,7 @@ categories: vim
  #### 2. 安装oh-my-zsh，并设置主题主题为`agnoster`
 
  	```bash
- 		$ curl -L https://raw.github.com/
- 		  robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+ 		$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
  	```
    编辑`~/.zshrc `，找到ZSH_THEME，设置为`agnoster`主题。
