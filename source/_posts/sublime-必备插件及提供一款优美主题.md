@@ -21,6 +21,15 @@ categories: 前端
 13. React Es6 Snippets
 14. Syntax Highlighting for PostCSS
 15. Autoprefixer
+16. SublimeLinter-contrib-stylelint
+17. EditorConfig 
+
+## 配置打开命令行
+新增sublime软链接。
+```bash
+ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+```
+软链接完成后，可直接在`bash`下 `subl file`。 
 
 ## sublime 主题
 https://github.com/equinusocio/material-theme

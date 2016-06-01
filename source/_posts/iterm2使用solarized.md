@@ -44,6 +44,9 @@ categories: vim
 
  2. 在iterm2 Profile设置中，Color 选择导入`Solarized Dark`。
  	 ![](/images/vim/iterm2color设置.png)
+ 3. 在Profiles->Text->Text Rendering 把 `Draw bold in bright colors`与`Draw bold in bold colors`勾选去掉。
+#### 6. 设置zsh常用插件
+常用的插件有：autojump，zsh-syntax-highlighting。
 
 #### 6. iterm2其他主题
 参考:[iterm2](http://github.com/mbadolato/iTerm2-Color-Schemes)
