@@ -2,7 +2,7 @@
 title: iterm2使用solarized配色 
 date: 2016-05-04 16:04:16
 tags: [itmer2,solarized]
-categories: vim
+categories: linux
 ---
 
 # iterm2使用solarized配色
@@ -45,7 +45,13 @@ categories: vim
  	 ![](/images/vim/iterm2color设置.png)
  3. 在Profiles->Text->Text Rendering 把 `Draw bold in bright colors`与`Draw bold in bold colors`勾选去掉。
 #### 6. 设置zsh常用插件
-常用的插件有：autojump，zsh-syntax-highlighting。
+常用的插件有：
+- zsh-autosuggestions 命令补全（参考:[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)）
+- encode64      `encode64 xxxx` encode64编码 
+- web-search        `google xxx` shell下google搜索，支持baidu,bing
+- extract       `x file`  加密，解密文件。
+- autojump      `j xxx` 自动跳转到某目录。需手动安装`brew install autojump`
+- zsh-syntax-highlighting。      命令行颜色提示，输入错误会以红色告知。 需手动安装`brew install zsh-syntax-highlighting`
 
 #### 6. iterm2其他主题
 参考:[iterm2](http://github.com/mbadolato/iTerm2-Color-Schemes)
