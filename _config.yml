@@ -75,3 +75,6 @@ deploy:
   type: git
   repository: https://github.com/chenchunyong/chenchunyong.github.io.git
   branch: master
+
+include:
+  - .nojekyll
