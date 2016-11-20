@@ -154,6 +154,9 @@ $ git push origin 本地分支:远程分支
 添加新的远程仓库。
 #### 3. git remote prune origin
 删除本地库存在，而远程仓库已经不存在的分支。
+#### 4. git remote add upstream “http://abc.com/abc.git”
+添加remote 远程地址
+
 ## git merge
  合并分支。
 #### 1. git merge feature
