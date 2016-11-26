@@ -39,4 +39,14 @@ $ cd blog-theme
 $ hexo server
 ```
 
+### 6. Blog generator
+```
+$ sh generator.sh
+```
+
+### 7. Blog deploy
+```
+$ hexo d
+```
+
 
