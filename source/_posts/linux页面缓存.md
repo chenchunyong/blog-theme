@@ -1,10 +1,10 @@
 ---
-title: linux页面缓存
+title: Linux页面缓存
 date: 2016-11-26 10:47:39
 tags: [linux]
 categories: linux
 ---
-# linux页面缓存
+# Linux页面缓存
 
 ## 虚拟内存机制
 虚拟内存的机制是将逻辑的线性地址映射为物理线性地址。如下图所示：
