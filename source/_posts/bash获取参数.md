@@ -1,7 +1,7 @@
 ---
 title: bash获取参数 
 date: 2016-11-30 14:04:16
-tags: [bash,shell]
+tags: [shell]
 categories: linux
 ---
 
