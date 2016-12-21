@@ -6,7 +6,7 @@ categories: [前端]
 ---
 
 # 解决生产环境js无法调试问题
-
+**demo**：https://github.com/chenchunyong/source-map-demo.git
 ## 背景
 前端开发中，开发环境与生产环境的代码往往不一致，生产环境的代码通过构建工具进行合并，混淆，压缩等操作。不过通过构建工具生成的js代码可读性差，不利于维护、排查问题。
 
@@ -18,18 +18,21 @@ categories: [前端]
 
 然后，根据用户输入的url是否包含sourcemap参数，来判断是否启动sourcemap调试功能。比如如果包含sourcemap参数，则引入bundle.debug.js，否则引入bundle.js。
 
-## 使用
 
-1. 安装
+## 使用
+1. 克隆
+```
+git clone https://github.com/chenchunyong/source-map-demo.git
+```
+2. 进入source-map-demo目录，安装
 ```
 npm install
 ```
-
-2. 打包js文件
+3. 打包js文件
 ```
 npm run bundle
 ```
-3. 启动
+4. 启动
 ```
 npm start
 ```
