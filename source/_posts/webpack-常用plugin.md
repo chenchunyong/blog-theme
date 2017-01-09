@@ -179,3 +179,36 @@ module.exports = {
 - chunksSortMode: 允许控制块在添加到页面之前的排序方式，支持的值：'none' | 'default' | {function}-default:'auto'
 - excludeChunks: 允许跳过某些块，(比如，跳过单元测试的块) 
 
+## assets-webpack-plugin
+
+通过webpack的 assets-webpack-plugin 插件生成一个记录了版本号的文件。其中一个重要功能是可以根据`asset.json`实现在线发现，例如可以把`asset.json`存在数据中，web服务器可以获取最新的`asset.json`实现实时发布。
+demo:
+```js
+var path = require('path')
+var AssetsPlugin = require('assets-webpack-plugin')
+var assetsPluginInstance = new AssetsPlugin()
+
+module.exports = {
+    entry: {
+        one: ['src/one.js'],
+        two: ['src/two.js']
+    },
+    output: {
+        path: path.join(__dirname, "public", "js"),
+        filename: "[name]-bundle-[hash].js",
+        publicPath: "/js/"
+    },
+    plugins: [assetsPluginInstance]
+}
+```
+生成的`asset.json`内容如下：
+```
+{
+    "one": {
+        "js": "/js/one_2bb80372ebe8047a68d4.bundle.js"
+    },
+    "two": {
+        "js": "/js/two_2bb80372ebe8047a68d4.bundle.js"
+    }
+}
+```
