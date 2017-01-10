@@ -1,8 +1,8 @@
 ---
 title: git refspecs 详解
 date: 2017-01-06 13:47:44
-tags:
-categories:
+tags: [git]
+categories: git
 ---
 
 # git refspecs 详解

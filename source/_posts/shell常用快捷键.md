@@ -1,7 +1,7 @@
 ---
 title: shell常用快捷键
 date: 2016-06-14 10:36:38
-tags: ["linux"]
+tags: [linux]
 categories: linux
 ---
 

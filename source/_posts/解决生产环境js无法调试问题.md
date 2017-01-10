@@ -1,8 +1,8 @@
 ---
 title: 解决生产环境js无法调试问题
 date: 2016-12-21 15:45:49
-tags: [前端]
-categories: [前端]
+tags: [react,javascript]
+categories: 前端
 ---
 
 # 解决生产环境js无法调试问题

@@ -1,8 +1,8 @@
 ---
 title: ' 理解Container Components组件'
 date: 2016-05-22 15:01:46
-tags: ["react"]
-categories: react
+tags: [react]
+categories: 前端
 ---
 
 # 理解Container component组件
