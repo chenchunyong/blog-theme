@@ -229,10 +229,12 @@ $ git push origin 本地分支:远程分支
 本地仓库feature分支log。
 #### 7. git log file
 HEAD指针中某个文件commit历史。
-#### 8. git log ..origin/feature
-查看当前还有多少个commit还未合并到当前分支。
-#### 9. git log origin/feature..
-查看没有在远端分支上的HEAD的改动。
+#### 8. git log master..feature
+其中的master..feature范围包含了在feature分支而不在master分支中所有的提交。换句话说，这个命令可以看出从master分支fork到feature分支后发生了哪些变化。
+#### 9. git log feature..
+查看有哪些commit当前分支存在，而feature没有。
+#### 10. git log --grep="xxx"
+查看包含“xxx”的commit 历史
 
 选项         说明
 %H      提交对象（commit）的完整哈希字串
