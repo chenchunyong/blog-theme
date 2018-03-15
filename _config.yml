@@ -78,3 +78,8 @@ deploy:
 
 include:
   - .nojekyll
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true

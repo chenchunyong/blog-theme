@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Even Loop</title>
+</head>
+
+<body>
+  <div>
+    <button class="btn" id="btn">3s内单击</button>
+  </div>
+  <script>
+    console.log('start test...');
+    // 添加
+    setTimeout(() => {
+      console.log("settimeout 1");
+    }, 0);
+    // request 请求
+    var xhr = new XMLHttpRequest();
+    //请求某个页面，如果出现跨域，则需自己调整
+    xhr.open('GET', '/images/avatar.png', true);
+    xhr.onload = function (e) {
+      if (this.status == 200 || this.status == 304) {
+        console.log("request response...");
+      }
+    };
+    xhr.send();
+    // 注册页面中的点击事件，主要在主进程阻塞3s内单击
+    document.getElementById('btn').addEventListener('click', () => {
+      console.log('click')
+    });
+    //promise 
+    new Promise((resolve, reject) => {
+      console.log("promise 1");
+      for (let i = 0; i < 1000; i++) {
+          i=9999 &&resolve();
+      }
+      console.log("promise 2");
+    }).then(()=>{
+      console.log("promise 3");
+    })
+    let now = new Date().getTime();
+    while ((new Date()).getTime() - now < 3000) {}
+    console.log("last test...");
+  </script>
+</body>
+
+</html>
